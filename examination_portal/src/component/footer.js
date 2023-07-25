@@ -11,20 +11,20 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#f5ebfa',
-        height: '250px',
-        marginTop: '120px'
+        backgroundColor: "#f5ebfa",
+        height: "250px",
+        marginTop: "120px",
       }}
     >
-      <Container maxWidth="lg" align='center'>
+      <Container maxWidth="lg" align="center">
         <Grid container spacing={5}>
           <Grid item xs={12} sm={4}>
             <Typography variant="h6" color="text.primary" gutterBottom>
               About Us
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              We are Kaivale Technology, dedicated to providing the best service to our
-              customers.
+              We are Kaivale Technology, dedicated to providing the best service
+              to our customers.
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
@@ -32,7 +32,8 @@ export default function Footer() {
               Contact Us
             </Typography>
             <Typography variant="body2" color="text.secondary">
-            669, 3rd Floor, 9th HSR Layout, Sector 7, Bangalore,Bangalore - 560102
+              669, 3rd Floor, 9th HSR Layout, Sector 7, Bangalore,Bangalore -
+              560102
             </Typography>
             <Typography variant="body2" color="text.secondary">
               Email: Kaivale@gmail.com
@@ -45,7 +46,10 @@ export default function Footer() {
             <Typography variant="h6" color="text.primary" gutterBottom>
               Follow Us
             </Typography>
-            <Link href="https://www.facebook.com/kaivaletechnologies" color="inherit">
+            <Link
+              href="https://www.facebook.com/kaivaletechnologies"
+              color="inherit"
+            >
               <Facebook />
             </Link>
             <Link
@@ -55,7 +59,10 @@ export default function Footer() {
             >
               <Instagram />
             </Link>
-            <Link href="https://www.linkedin.com/company/kaivale-technologies/" color="inherit">
+            <Link
+              href="https://www.linkedin.com/company/kaivale-technologies/"
+              color="inherit"
+            >
               <LinkedIn />
             </Link>
           </Grid>
