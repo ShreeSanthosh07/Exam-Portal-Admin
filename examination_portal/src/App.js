@@ -9,6 +9,12 @@ import SignIn from "./SignIn/SignIn";
 import ThankYou from "./component/ThankYou";
 import Dashboard from "./Dashboard/Dashboard.js";
 import Content from "./Content/Content";
+import StudentConfig from "./StudentConfiguration/studentConfig";
+import PersistentDrawerLeft from "./DrawerMui/Drawer";
+import Calendar from "./component/Calendar";
+import Profile from "./Profile/Profile";
+import Sidenav2 from "./DrawerMui/Drawer";
+
 
 let SignUp = lazy(() => import("./signup/SignUp.js"));
 let Landings = lazy(() => import("./Landing/landing.js"));
@@ -27,7 +33,10 @@ function App() {
           <Route exact path="/SignIn" element={<SignIn />} />
           <Route exact path="/Home" element={<Dashboard />} />
           <Route exact path="/content" element={<Content />} />
-        </Routes>
+          <Route exact path="/student" element={<StudentConfig/>} />
+          <Route exact path="/calendar" element={<Calendar/>} />
+          <Route exact path="/profile" element={<Sidenav2/>} />
+          </Routes>
       </BrowserRouter>
     </div>
   );

@@ -7,7 +7,6 @@ import {
   CircularProgress,
   Paper,
   Typography,
-  CssBaseline,
 } from "@mui/material";
 import {
   MyResponsiveBar,
@@ -19,18 +18,9 @@ import Sidenav from "../component/SideBar";
 
 function Dashboard() {
   return (
-    <Box>
-      <Heading2 />
-      <Sidenav />
+    <Box sx={{ p:'20px 0 20px 30px' }}>
 
-      <Box
-        sx={{
-          marginLeft: "300px",
-          marginTop: "65px",
-          width: "80%",
-          paddingTop: "20px",
-        }}
-      >
+     
         <Typography variant="h5">Hi, welcome back</Typography>
         <Grid container spacing={2}>
           <Grid item xs={4}>
@@ -113,7 +103,7 @@ function Dashboard() {
           </Grid>
         </Box>
       </Box>
-    </Box>
+  
   );
 }
 

@@ -34,13 +34,10 @@ function Content() {
 
   return (
     <div>
-      <Heading2 />
-      <Box sx={{ marginTop: "65px" }}>
-        <Sidenav />
-      </Box>
+     
 
-      <Box sx={{ width: "84%", marginLeft: "243px", marginTop: "0" }}>
-        <Grid container sx={{ height: "100%", width: "100%" }}>
+      <Box >
+        <Grid container >
           <Grid
             item
             xs={12}

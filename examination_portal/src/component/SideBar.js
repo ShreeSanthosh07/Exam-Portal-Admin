@@ -14,26 +14,27 @@ import { Link } from "@mui/material";
 import { useState } from "react";
 
 function Sidenav() {
-  const [collapsed, setCollapsed] = useState(false);
+  // const [collapsed, setCollapsed] = useState(false);
 
-  const handleCollapsedChange = () => {
-    setCollapsed(!collapsed);
-  };
+  // const handleCollapsedChange = () => {
+  //   setCollapsed(!collapsed);
+  // };
 
   return (
     <div
       style={({ height: "100vh" }, { display: "flex" }, { position: "fixed" })}
     >
       <Sidebar
-        collapsed={collapsed}
-        handleCollapsedChange={handleCollapsedChange}
-        style={{ height: "100vh", background: "#f700ff" }}
+      backgroundColor="#da64f5"
+        // collapsed={collapsed}
+        // handleCollapsedChange={handleCollapsedChange}
+        style={{ height: "100vh"}}
       >
         <Menu>
           <MenuItem
             icon={<MenuOutlinedIcon />}
-            onClick={handleCollapsedChange}
-            style={{ textAlign: "center" }}
+            // onClick={handleCollapsedChange}
+            style={{ textAlign: "center", paddingTop:'20px' }}
           >
             {" "}
             <h2>Admin</h2>
@@ -51,6 +52,13 @@ function Sidenav() {
             style={{ fontWeight: "bold" }}
           >
             Contentent Management
+          </MenuItem>
+          <MenuItem
+            icon={<SchoolOutlinedIcon />}
+            component={<Link href="/student" underline="always" />}
+            style={{ fontWeight: "bold" }}
+          >
+            Student Configuration
           </MenuItem>
           <SubMenu
             label="Question Paper"
@@ -84,12 +92,14 @@ function Sidenav() {
             FAQ
           </MenuItem>
           <MenuItem
+            component={<Link href='/calendar'/>}
             icon={<CalendarTodayOutlinedIcon />}
             style={{ fontWeight: "bold" }}
           >
             Calendar
           </MenuItem>
           <MenuItem
+            
             icon={<AssessmentOutlinedIcon />}
             style={{ fontWeight: "bold" }}
           >
